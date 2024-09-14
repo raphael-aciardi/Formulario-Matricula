@@ -1,6 +1,6 @@
 *{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -15,9 +15,13 @@
   --text-highlight: #E43A12;
 
   --surface-primary: #FFFFFF;
-  --surface-secondary: #F5F5F5;
+  --surface-secondary: #FEE7D6;
 
   --stroke-default: #D6D3D1;
   --stroke-highlight: #f3541c;
   --semantic-error: #DC2626;
+}
+
+body{
+  overflow: hidden;
 }
