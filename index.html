@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/index.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
 
-<title>Estrelas do Amanhã</title>
+  <title>Estrelas do Amanhã</title>
 </head>
+
 <body>
   <div id="app">
     <main>
@@ -21,6 +23,51 @@
         </div>
         <h1>Formulário De Matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+        <form enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+
+              <label for="fullname">Nome completo</label>
+
+              <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da criança">
+
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input name="fullname" type="date" id="birth" lang="pt-BR">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+            </div> 
+            
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info"
+                cols="30" rows="10" placeholder="A criança possui alguma condição médica que a escola deve estar ciente?( Se sim, especifique)"
+              ></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Clique aqui para <br>
+                selecionar os arquivos
+              </p>
+            </div>
+
+          </fieldset>
+        </form>
       </div>
     </main>
 
@@ -38,8 +85,9 @@
 
         <img src="assets/Illustration.svg" alt="">
       </div>
-      
+
     </aside>
   </div>
 </body>
+
 </html>
